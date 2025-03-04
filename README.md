@@ -1,2 +1,2 @@
-# Koalaty-Trip
+# Koala Travel
 AI Trip Planner
