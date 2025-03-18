@@ -1,0 +1,30 @@
+.navbar {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 1rem;
+  position: relative;
+}
+
+.navItem {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  font-size: 18px;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  color: black;
+  font-size: 64px;
+  font-family: "Rancho", cursive;
+  font-weight: 400;
+}

@@ -1,0 +1,74 @@
+.homepage {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+}
+.intro {
+  width: 443px;
+  position: relative;
+  left: 15%;
+  color: #000;
+  font-family: "Josefin Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 125%;
+}
+
+.highlight {
+  color: #9d2933;
+  font-family: "Josefin Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 125%;
+}
+
+.buttonContainer {
+  display: flex;
+  margin-left: 15%;
+  margin-top: 8rem;
+}
+
+.menuButton {
+  width: 125px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #e76f51;
+  color: #fff;
+  font-family: "Libre Franklin";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hoursButton {
+  margin-left: 6rem;
+  color: #000;
+  font-family: "Libre Franklin";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  margin-left: 1rem;
+  width: 600px;
+  height: 837px;
+  flex-shrink: 0;
+  background: url("../assets/homepage.jpg") lightgray 50% / cover no-repeat;
+}
