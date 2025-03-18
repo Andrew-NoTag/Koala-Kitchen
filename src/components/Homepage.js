@@ -3,6 +3,7 @@ import styles from "../styles/Homepage.module.css";
 
 function Homepage() {
   return (
+    // two columns: left side: introduction, buttons; right side: image gallery
     <div className={styles.homepage}>
       <div>
         {/* left side: introduction, buttons */}

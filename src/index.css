@@ -1,3 +1,5 @@
-body {
+html, body {
     background: #FFEFE8;
+    margin: 0;
+    padding: 0;
 }
