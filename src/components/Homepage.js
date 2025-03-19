@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/Homepage.module.css";
+import { Link } from "react-router-dom";
 
 function Homepage() {
   return (
@@ -12,7 +13,9 @@ function Homepage() {
           Meal with Chef Zhang. Koala-Approved!
         </div>
         <div className={styles.buttonContainer}>
-          <div className={styles.menuButton}>View Menu</div>
+          <Link to="/menu">
+            <div className={styles.menuButton}>View Menu</div>
+          </Link>
           <div className={styles.hoursButton}>Hours</div>
         </div>
       </div>

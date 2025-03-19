@@ -12,15 +12,17 @@ function Footer() {
       {/* first column */}
       <div className={styles.column} style={{ marginLeft: "10%" }}>
         <div className={styles.title}>KoalaKitchen</div>
-        <div className={styles.p} style={{ marginTop: "3rem", width: "80%"}}>
-          This young chef from Guangdong will surprise you in a way you have never
-          thought about Cantonese Cuisine.
+        <div className={styles.p} style={{ marginTop: "3rem", width: "80%" }}>
+          This young chef from Guangdong will surprise you in a way you have
+          never thought about Cantonese Cuisine.
         </div>
         <div className={styles.p} style={{ marginTop: "3rem" }}>
           2024-2025
         </div>
         <div className={styles.icons} style={{ marginTop: "3rem" }}>
-          <img src={instagramIcon} alt="Instagram"></img>
+          <a href="https://www.instagram.com/andrew_zhang0928/">
+            <img src={instagramIcon} alt="Instagram"></img>
+          </a>
         </div>
       </div>
       {/* second column */}
@@ -59,16 +61,17 @@ function Footer() {
           </div>
         </div>
         <img
-            src={location}
-            alt="Koala Kitchen"
-            style={{
-              width: "310.051px",
-              height: "300px",
-              flexShrink: "0",
-              borderRadius: "7px",
-              background: "lightgray -146.627px -148.846px / 194.718% 194.231% no-repeat"
-            }}
-          />
+          src={location}
+          alt="Koala Kitchen"
+          style={{
+            width: "310.051px",
+            height: "300px",
+            flexShrink: "0",
+            borderRadius: "7px",
+            background:
+              "lightgray -146.627px -148.846px / 194.718% 194.231% no-repeat",
+          }}
+        />
       </div>
     </div>
   );
