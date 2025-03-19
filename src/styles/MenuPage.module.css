@@ -1,3 +1,91 @@
 .menuPage {
-    background: #FFEFE8;
+  background: #ffefe8;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  color: #333;
+  font-family: Rancho;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  user-select: none; /* Prevents text selection */
+}
+
+.intro {
+  position: relative;
+  text-align: center;
+  color: #e76f51;
+  font-family: "Josefin Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.menuContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  margin-left: 10%;
+}
+
+.column {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.menuTitle {
+  color: #333;
+  font-family: "Josefin Sans";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.menuItem {
+  display: flex;
+  flex-direction: row;
+}
+
+.itemImage {
+  width: 99px;
+  height: 99px;
+  flex-shrink: 0;
+  border-radius: 100px;
+}
+
+.itemName {
+  margin: 1rem 1rem;
+  color: #333;
+  font-family: "Libre Franklin";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.itemDescription {
+  margin: 1rem 1rem;
+  color: #333;
+  font-family: "Libre Franklin";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.breakLine {
+  margin: 3rem 0;
+  width: 80%;
+  border-top: dotted 1px;
 }

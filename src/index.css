@@ -1,5 +1,12 @@
-html, body {
-    background: #FFEFE8;
-    margin: 0;
-    padding: 0;
+html,
+body {
+  background: #ffefe8;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default style from <a> and <Link> */
+a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit color from parent element */
 }
