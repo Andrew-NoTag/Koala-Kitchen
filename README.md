@@ -8,12 +8,6 @@ Installation:
 npm install
 ```
 
-To Run Test Suite:
-
-```bash
-npm test
-```
-
 To Start Server:
 
 ```bash

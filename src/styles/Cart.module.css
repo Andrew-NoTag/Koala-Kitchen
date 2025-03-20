@@ -1,0 +1,35 @@
+.cartContainer {
+  position: fixed;
+  width: 20%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem 0;
+  border-radius: 10px;
+  z-index: 999;
+  cursor: move;
+}
+
+.title {
+  color: #333;
+  font-family: Rancho;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  user-select: none;
+}
+
+.item {
+  margin: 1rem 1rem;
+  color: #333;
+  font-family: "Libre Franklin";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

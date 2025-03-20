@@ -12,6 +12,7 @@
   font-weight: 400;
   line-height: normal;
   user-select: none; /* Prevents text selection */
+  z-index: 1;
 }
 
 .intro {
@@ -23,16 +24,17 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  z-index: 1;
 }
 
 .menuContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  margin: 20px;
+  justify-content: space-around;
+  margin: 4rem 7rem;
   padding: 20px;
-  margin-left: 10%;
+
 }
 
 .column {

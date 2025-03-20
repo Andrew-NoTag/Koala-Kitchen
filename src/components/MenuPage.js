@@ -1,10 +1,13 @@
 import React from "react";
 import styles from "../styles/MenuPage.module.css";
 import sampleDish from "../assets/menu/sample_dish.jpg";
+import Cart from "./Cart";
+
 
 function MenuPage() {
   return (
     <div className={styles.menuPage}>
+      <Cart />
       <div className={styles.title}>Menu</div>
       <div className={styles.intro}>Caan Paai</div>
       {/* menu content */}
