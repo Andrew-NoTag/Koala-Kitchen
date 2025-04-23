@@ -3,9 +3,25 @@ import styles from "../styles/Footer.module.css";
 import instagramIcon from "../assets/instagram_icon.svg";
 import phoneIcon from "../assets/phone_icon.svg";
 import mapIcon from "../assets/map_marker.svg";
-import location from "../assets/location.png";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import L from "leaflet";
+
+// Fix for default marker icon issue
+import markerIcon from "leaflet/dist/images/marker-icon.png";
+import markerShadow from "leaflet/dist/images/marker-shadow.png";
+const defaultIcon = L.icon({
+  iconUrl: markerIcon,
+  shadowUrl: markerShadow,
+  iconAnchor: [12, 41],
+});
+L.Marker.prototype.options.icon = defaultIcon;
 
 function Footer() {
+  // map center
+
+  const center = [40.730018629688765, -74.0617762575669];
+
   return (
     // three columns: left: contact, logo. middle: hours, telephone. right: direction
     <div className={styles.footer}>
@@ -20,7 +36,7 @@ function Footer() {
           2024-2025
         </div>
         <div className={styles.icons} style={{ marginTop: "3rem" }}>
-          <a href="https://www.instagram.com/andrew_zhang0928/">
+          <a href="https://www.instagram.com/andrew_zhang0928/" target="_blank">
             <img src={instagramIcon} alt="Instagram"></img>
           </a>
         </div>
@@ -57,21 +73,33 @@ function Footer() {
           <img src={mapIcon} alt="location"></img>
           <div>
             <div className={styles.p}>Koala Kitchen</div>
-            <div className={styles.p}>Brooklyn, NY</div>
+            <div className={styles.p}>Jersey City, NJ</div>
           </div>
         </div>
-        <img
-          src={location}
-          alt="Koala Kitchen"
-          style={{
-            width: "310.051px",
-            height: "300px",
-            flexShrink: "0",
-            borderRadius: "7px",
-            background:
-              "lightgray -146.627px -148.846px / 194.718% 194.231% no-repeat",
-          }}
-        />
+        {/* map */}
+        <MapContainer
+          center={center}
+          zoom={15}
+          style={{ width: "310px", height: "300px", borderRadius: "7px" }}
+        >
+          <TileLayer
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          />
+          <Marker
+            position={center}
+            eventHandlers={{
+              click: () => {
+                window.open(
+                  "https://www.google.com/maps/place/425+summit+ave+jersey+city",
+                  "_blank"
+                );
+              },
+            }}
+          >
+            <Popup>Koala Kitchen, Jersey City, NJ</Popup>
+          </Marker>
+        </MapContainer>
       </div>
     </div>
   );
