@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 import styles from "../styles/MenuPage.module.css";
-import sampleDish from "../assets/menu/sample_dish.jpg";
 import Cart from "./Cart";
 import { FaPlus } from "react-icons/fa";
+import menuData from "../data/menuData";
 
 function MenuPage() {
-  // State to manage cart
   const [cart, setCart] = useState({});
 
-  // Add item to cart
   const addToCart = (itemName) => {
     setCart((prevCart) => ({
       ...prevCart,
@@ -16,7 +14,6 @@ function MenuPage() {
     }));
   };
 
-  // Remove item from cart
   const removeFromCart = (itemName) => {
     setCart((prevCart) => {
       const updatedCart = { ...prevCart };
@@ -27,155 +24,40 @@ function MenuPage() {
 
   return (
     <div className={styles.menuPage}>
-      <Cart cartItems={cart} removeFromCart={removeFromCart}/>
+      <Cart cartItems={cart} removeFromCart={removeFromCart} />
       <div className={styles.title}>Menu</div>
       <div className={styles.intro}>Caan Paai</div>
-      {/* menu content */}
       <div className={styles.menuContainer}>
-        {/* column 1 */}
-        <div className={styles.column}>
-          <div className={styles.menuTitle}>Appetizers</div>
-          <div style={{ marginTop: "2rem" }}></div>
-          <div className={styles.menuItem}>
-            <img
-              className={styles.itemImage}
-              src={sampleDish}
-              alt="sample dish"
-            />
-            <div>
-              <div className={styles.itemName}>
-                Spring Rolls
-                <FaPlus
-                  className={styles.addIcon}
-                  onClick={() => addToCart("Spring Rolls")}
-                />
-              </div>
-              <div className={styles.itemDescription}>
-                This is a description of the dish.
-              </div>
-            </div>
+        {menuData.map((category) => (
+          <div key={category.category} className={styles.column}>
+            <div className={styles.menuTitle}>{category.category}</div>
+            <div style={{ marginTop: "2rem" }}></div>
+            {category.items.map((item) => (
+              <React.Fragment key={item.name}>
+                <div className={styles.menuItem}>
+                  <img
+                    className={styles.itemImage}
+                    src={item.image}
+                    alt={item.name}
+                  />
+                  <div>
+                    <div className={styles.itemName}>
+                      {item.name}
+                      <FaPlus
+                        className={styles.addIcon}
+                        onClick={() => addToCart(item.name)}
+                      />
+                    </div>
+                    <div className={styles.itemDescription}>
+                      {item.description}
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.breakLine}></div>
+              </React.Fragment>
+            ))}
           </div>
-          <div className={styles.breakLine}></div>
-          <div className={styles.menuItem}>
-            <img
-              className={styles.itemImage}
-              src={sampleDish}
-              alt="sample dish"
-            />
-            <div>
-              <div className={styles.itemName}>Spring Rolls</div>
-              <div className={styles.itemDescription}>
-                This is a description of the dish.
-              </div>
-            </div>
-          </div>
-          <div className={styles.breakLine}></div>
-          <div className={styles.menuItem}>
-            <img
-              className={styles.itemImage}
-              src={sampleDish}
-              alt="sample dish"
-            />
-            <div>
-              <div className={styles.itemName}>Spring Rolls</div>
-              <div className={styles.itemDescription}>
-                This is a description of the dish.
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* column 2 */}
-        <div className={styles.column}>
-          <div className={styles.menuTitle}>Entree</div>
-          <div style={{ marginTop: "2rem" }}></div>
-          <div className={styles.menuItem}>
-            <img
-              className={styles.itemImage}
-              src={sampleDish}
-              alt="sample dish"
-            />
-            <div>
-              <div className={styles.itemName}>Spring Rolls</div>
-              <div className={styles.itemDescription}>
-                This is a description of the dish.
-              </div>
-            </div>
-          </div>
-          <div className={styles.breakLine}></div>
-          <div className={styles.menuItem}>
-            <img
-              className={styles.itemImage}
-              src={sampleDish}
-              alt="sample dish"
-            />
-            <div>
-              <div className={styles.itemName}>Spring Rolls</div>
-              <div className={styles.itemDescription}>
-                This is a description of the dish.
-              </div>
-            </div>
-          </div>
-          <div className={styles.breakLine}></div>
-          <div className={styles.menuItem}>
-            <img
-              className={styles.itemImage}
-              src={sampleDish}
-              alt="sample dish"
-            />
-            <div>
-              <div className={styles.itemName}>Spring Rolls</div>
-              <div className={styles.itemDescription}>
-                This is a description of the dish.
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* column 3 */}
-        <div className={styles.column}>
-          <div className={styles.menuTitle}>Desert</div>
-          <div style={{ marginTop: "2rem" }}></div>
-          <div className={styles.menuItem}>
-            <img
-              className={styles.itemImage}
-              src={sampleDish}
-              alt="sample dish"
-            />
-            <div>
-              <div className={styles.itemName}>Spring Rolls</div>
-              <div className={styles.itemDescription}>
-                This is a description of the dish.
-              </div>
-            </div>
-          </div>
-          <div className={styles.breakLine}></div>
-          <div className={styles.menuItem}>
-            <img
-              className={styles.itemImage}
-              src={sampleDish}
-              alt="sample dish"
-            />
-            <div>
-              <div className={styles.itemName}>Spring Rolls</div>
-              <div className={styles.itemDescription}>
-                This is a description of the dish.
-              </div>
-            </div>
-          </div>
-          <div className={styles.breakLine}></div>
-          <div className={styles.menuItem}>
-            <img
-              className={styles.itemImage}
-              src={sampleDish}
-              alt="sample dish"
-            />
-            <div>
-              <div className={styles.itemName}>Spring Rolls</div>
-              <div className={styles.itemDescription}>
-                This is a description of the dish.
-              </div>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
