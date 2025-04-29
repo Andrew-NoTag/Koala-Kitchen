@@ -91,3 +91,16 @@
   width: 80%;
   border-top: dotted 1px;
 }
+
+.addIcon {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #388c68;
+  font-size: 16px;
+  vertical-align: middle;
+  transition: color 0.3s ease;
+}
+
+.addIcon:hover {
+  color: #2a6b4f;
+}

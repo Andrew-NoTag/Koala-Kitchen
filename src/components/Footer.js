@@ -20,7 +20,8 @@ L.Marker.prototype.options.icon = defaultIcon;
 function Footer() {
   // map center
 
-  const center = [40.730018629688765, -74.0617762575669];
+  // 370 Jay St
+  const center = [40.69332171964883, -73.98748151810337];
 
   return (
     // three columns: left: contact, logo. middle: hours, telephone. right: direction
@@ -73,7 +74,7 @@ function Footer() {
           <img src={mapIcon} alt="location"></img>
           <div>
             <div className={styles.p}>Koala Kitchen</div>
-            <div className={styles.p}>Jersey City, NJ</div>
+            <div className={styles.p}>New York, NY</div>
           </div>
         </div>
         {/* map */}
@@ -83,8 +84,8 @@ function Footer() {
           style={{ width: "310px", height: "300px", borderRadius: "7px" }}
         >
           <TileLayer
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+            attribution='&copy; <a href="https://www.carto.com/">CARTO</a>'
           />
           <Marker
             position={center}
@@ -97,7 +98,7 @@ function Footer() {
               },
             }}
           >
-            <Popup>Koala Kitchen, Jersey City, NJ</Popup>
+            <Popup>Koala Kitchen, New York, NY</Popup>
           </Marker>
         </MapContainer>
       </div>

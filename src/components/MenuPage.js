@@ -1,13 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../styles/MenuPage.module.css";
 import sampleDish from "../assets/menu/sample_dish.jpg";
 import Cart from "./Cart";
-
+import { FaPlus } from "react-icons/fa";
 
 function MenuPage() {
+  // State to manage cart
+  const [cart, setCart] = useState({});
+
+  // Add item to cart
+  const addToCart = (itemName) => {
+    setCart((prevCart) => ({
+      ...prevCart,
+      [itemName]: (prevCart[itemName] || 0) + 1,
+    }));
+  };
+
+  // Remove item from cart
+  const removeFromCart = (itemName) => {
+    setCart((prevCart) => {
+      const updatedCart = { ...prevCart };
+      delete updatedCart[itemName];
+      return updatedCart;
+    });
+  };
+
   return (
     <div className={styles.menuPage}>
-      <Cart />
+      <Cart cartItems={cart} removeFromCart={removeFromCart}/>
       <div className={styles.title}>Menu</div>
       <div className={styles.intro}>Caan Paai</div>
       {/* menu content */}
@@ -23,7 +43,13 @@ function MenuPage() {
               alt="sample dish"
             />
             <div>
-              <div className={styles.itemName}>Spring Rolls</div>
+              <div className={styles.itemName}>
+                Spring Rolls
+                <FaPlus
+                  className={styles.addIcon}
+                  onClick={() => addToCart("Spring Rolls")}
+                />
+              </div>
               <div className={styles.itemDescription}>
                 This is a description of the dish.
               </div>

@@ -1,3 +1,11 @@
+body {
+  font-family: "Libre Franklin";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
 .cartContainer {
   position: fixed;
   width: 20%;
@@ -32,4 +40,40 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+.itemList {
+  margin: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.itemRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itemName {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.itemQuantity {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.deleteButton {
+  background: none;
+  border: none;
+  color: #e76f51;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  color: #d62828;
 }

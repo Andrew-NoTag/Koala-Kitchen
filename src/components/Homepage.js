@@ -55,7 +55,7 @@ function Homepage() {
         </div>
         <div className={styles.buttonContainer}>
           <Link to="/menu">
-            <div className={styles.menuButton}>View Menu</div>
+            <div className={styles.menuButton}>Order Now</div>
           </Link>
           <div className={styles.hoursButton}>
             {currentTime.toLocaleDateString(undefined, {
