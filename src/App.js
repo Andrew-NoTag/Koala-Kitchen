@@ -5,7 +5,7 @@ import Footer from "./components/Footer.js";
 import MenuPage from "./components/MenuPage.js";
 import ReservationPage from "./components/ReservationPage.js";
 import AboutUs from "./components/AboutUs.js";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const [cart, setCart] = useState(() => {
@@ -37,7 +37,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div>
         {/* NavBar at top of the page */}
         <NavBar />
@@ -70,7 +70,7 @@ function App() {
         {/* Footer at bottom of the page */}
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
