@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/koala-kitchen/static/css/main.a89006f1.css",
-    "main.js": "/koala-kitchen/static/js/main.e6efa0d9.js",
+    "main.js": "/koala-kitchen/static/js/main.ab02632a.js",
     "static/media/beef_brisket_stew.png": "/koala-kitchen/static/media/beef_brisket_stew.204cd92d37198a25dbbd.png",
     "static/media/oysters.png": "/koala-kitchen/static/media/oysters.99056c9f1a237047d4fb.png",
     "static/media/cilantro_beef_salad.jpg": "/koala-kitchen/static/media/cilantro_beef_salad.9828fb2606d7851761a8.jpg",
@@ -14,15 +14,15 @@
     "static/media/tiramisu.jpg": "/koala-kitchen/static/media/tiramisu.a4a709e6d8989e9d23d1.jpg",
     "static/media/cold_noodles.jpg": "/koala-kitchen/static/media/cold_noodles.c218067965cd6bee975e.jpg",
     "static/media/homepage.jpg": "/koala-kitchen/static/media/homepage.0d8ba300505412c1fcda.jpg",
-    "static/media/instagram_icon.svg": "/koala-kitchen/static/media/instagram_icon.6534865c1dda2b869dbf00755d5a1e72.svg",
-    "static/media/phone_icon.svg": "/koala-kitchen/static/media/phone_icon.36f7ff74de6ac1b6eff4dfc08a438192.svg",
+    "static/media/instagram_icon.svg": "/koala-kitchen/static/media/instagram_icon.e6f951cdb0f088e3a6a26559f8e9e579.svg",
+    "static/media/phone_icon.svg": "/koala-kitchen/static/media/phone_icon.2f004ba1c674d832a8d1235a6dc062fb.svg",
     "index.html": "/koala-kitchen/index.html",
-    "static/media/map_marker.svg": "/koala-kitchen/static/media/map_marker.c0d5032bf0ffd0b122799b6d983469f9.svg",
+    "static/media/map_marker.svg": "/koala-kitchen/static/media/map_marker.b5d93db8aa468bf5c0264fa71223ec0d.svg",
     "main.a89006f1.css.map": "/koala-kitchen/static/css/main.a89006f1.css.map",
-    "main.e6efa0d9.js.map": "/koala-kitchen/static/js/main.e6efa0d9.js.map"
+    "main.ab02632a.js.map": "/koala-kitchen/static/js/main.ab02632a.js.map"
   },
   "entrypoints": [
     "static/css/main.a89006f1.css",
-    "static/js/main.e6efa0d9.js"
+    "static/js/main.ab02632a.js"
   ]
 }
