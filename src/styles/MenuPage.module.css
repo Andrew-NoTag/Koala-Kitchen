@@ -30,7 +30,7 @@
 .menuContainer {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
   margin: 4rem 7rem;
   padding: 20px;

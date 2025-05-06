@@ -4,6 +4,7 @@ import Homepage from "./components/Homepage.js";
 import Footer from "./components/Footer.js";
 import MenuPage from "./components/MenuPage.js";
 import ReservationPage from "./components/ReservationPage.js";
+import AboutUs from "./components/AboutUs.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -63,6 +64,7 @@ function App() {
               />
             }
           />
+          <Route path="/about" element={<AboutUs />} />
         </Routes>
 
         {/* Footer at bottom of the page */}

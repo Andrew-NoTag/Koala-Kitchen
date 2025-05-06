@@ -1,0 +1,28 @@
+.aboutUsPage {
+  background-color: #ffefe8;
+  padding: 2rem;
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  color: #333;
+  font-family: Rancho;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  user-select: none; /* Prevents text selection */
+  z-index: 1;
+}
+
+.description {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    width: 50%;
+    margin: 0 auto 1rem auto;
+    text-align: center;
+  }
