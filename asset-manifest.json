@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/koala-kitchen/static/css/main.a89006f1.css",
-    "main.js": "/koala-kitchen/static/js/main.95299d65.js",
+    "main.js": "/koala-kitchen/static/js/main.e6efa0d9.js",
     "static/media/beef_brisket_stew.png": "/koala-kitchen/static/media/beef_brisket_stew.204cd92d37198a25dbbd.png",
     "static/media/oysters.png": "/koala-kitchen/static/media/oysters.99056c9f1a237047d4fb.png",
     "static/media/cilantro_beef_salad.jpg": "/koala-kitchen/static/media/cilantro_beef_salad.9828fb2606d7851761a8.jpg",
@@ -19,10 +19,10 @@
     "index.html": "/koala-kitchen/index.html",
     "static/media/map_marker.svg": "/koala-kitchen/static/media/map_marker.c0d5032bf0ffd0b122799b6d983469f9.svg",
     "main.a89006f1.css.map": "/koala-kitchen/static/css/main.a89006f1.css.map",
-    "main.95299d65.js.map": "/koala-kitchen/static/js/main.95299d65.js.map"
+    "main.e6efa0d9.js.map": "/koala-kitchen/static/js/main.e6efa0d9.js.map"
   },
   "entrypoints": [
     "static/css/main.a89006f1.css",
-    "static/js/main.95299d65.js"
+    "static/js/main.e6efa0d9.js"
   ]
 }
