@@ -37,7 +37,7 @@ function App() {
   };
 
   return (
-    <HashRouter>
+    <HashRouter basename="/">
       <div>
         {/* NavBar at top of the page */}
         <NavBar />
