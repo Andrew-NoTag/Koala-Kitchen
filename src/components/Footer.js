@@ -92,7 +92,7 @@ function Footer() {
             eventHandlers={{
               click: () => {
                 window.open(
-                  "https://www.google.com/maps/place/425+summit+ave+jersey+city",
+                  "https://www.google.com/maps/place/370+jay+st,+brooklyn",
                   "_blank"
                 );
               },

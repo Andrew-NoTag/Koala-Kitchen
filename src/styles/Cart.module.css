@@ -53,11 +53,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
 }
 
 .itemName {
   font-size: 16px;
   font-weight: 500;
+  flex-grow: 1;
 }
 
 .itemQuantity {
@@ -76,4 +78,25 @@ body {
 
 .deleteButton:hover {
   color: #d62828;
+}
+
+.checkoutButton {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #388c68;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.checkoutButton:hover {
+  background-color: #2e6a50;
+}
+
+.checkoutButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }

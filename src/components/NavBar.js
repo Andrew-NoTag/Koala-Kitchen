@@ -9,7 +9,7 @@ function NavBar() {
       <div className={styles.navItem}>About us</div>
       <div className={styles.title}>KoalaKitchen</div>
       <Link to="/menu"><div className={styles.navItem}>Menu</div></Link>
-      <div className={styles.navItem}>Reservation</div>
+      <Link to="/reservation"><div className={styles.navItem}>Reservation</div></Link>
     </div>
   );
 }

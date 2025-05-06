@@ -1,27 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "../styles/MenuPage.module.css";
 import Cart from "./Cart";
 import { FaPlus } from "react-icons/fa";
 import menuData from "../data/menuData";
 
-function MenuPage() {
-  const [cart, setCart] = useState({});
-
-  const addToCart = (itemName) => {
-    setCart((prevCart) => ({
-      ...prevCart,
-      [itemName]: (prevCart[itemName] || 0) + 1,
-    }));
-  };
-
-  const removeFromCart = (itemName) => {
-    setCart((prevCart) => {
-      const updatedCart = { ...prevCart };
-      delete updatedCart[itemName];
-      return updatedCart;
-    });
-  };
-
+function MenuPage({ cart, addToCart, removeFromCart }) {
   return (
     <div className={styles.menuPage}>
       <Cart cartItems={cart} removeFromCart={removeFromCart} />
